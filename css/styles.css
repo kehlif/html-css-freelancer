@@ -17,3 +17,13 @@ html {
 *, *:before, *:after {
    box-sizing: inherit;
 }
+
+.intro{
+   background-image:url("../images/header.jpg");
+   height:80vh;
+}
+
+button{
+   background-color: #f0454c;
+
+}
