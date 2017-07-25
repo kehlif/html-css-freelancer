@@ -18,47 +18,154 @@ html {
    box-sizing: inherit;
 }
 
+
+
+section h2{
+   border-top:4px solid #f0454c;
+   width:60px;
+   padding-top:20px;
+}
+
+section p{
+
+}
+
 /* mettre une image en fond et la dimensionnée*/
 .intro{
    background-image:url("../images/header.jpg");
    background-repeat: no-repeat;
-   height:200vh;
-   margin-bottom: 1px;
+   width: 1380px;
+   height: 1100px;
+   /*margin-bottom: 1px;*/
+   background-size: cover;
 }
 
 /* center le titre et placer la barre au dessus */
 .intro h1{
    border-top:4px solid #f0454c;
+   width:60px;
    height:50px;
    text-align:center;
    margin-top: 200px;
    margin-left:20px;
    margin-right: 250px;
+   padding:90px;
 }
 
+.intro h3{
+   height:50px;
+   text-align:center;
+   margin-left:20px;
+   margin-right: 250px;
+   padding:20px;
+}
+
+
 /* barre de navigation en haut à droite et séparée */
-.navigation li {
-   float:right;
-   display:inline;
-   width:100px;
+.navigation li,a {
+   position: relative;
+   left: 450px;
+   right:200px;
+   display:inline-block;
+   /*width:100px;*/
+   text-decoration: none;
+}
+
+.fa-twitter,.fa-facebook{
+   color:#f0454c;
 }
 
 /* dimensionnée les boutons et mise en forme */
 .bouton {
    background-color: #f0454c;
-   height:100vh;
-   width:150vw;
    margin-left: 150px;
    border-radius: 5px;
    border:1px solid #f0454c;
    color:white;
    text-decoration:none;
+   padding:20px;
+   text-align:center;
 }
 
 /* pour center le conteneur qui contient le contenant */
 .conteneur{
-   margin:200px;
+   margin:220px;
    margin-top:0;
+}
+
+/* 1er paragraphe a bien centré */
+.peace{
+   padding-top:45px;
+   padding-right:45px;
+   padding-bottom: 45px;
+   padding-left:0;
+}
+
+/* 2eme paragraphe a centré */
+.free{
+   padding:45px;
+}
+
+/*3eme paragraphe à cnetré */
+.paiement{
+   padding:45px;
+}
+
+
+
+/* arrondir l'image de joey*/
+.joey img{
+   border-radius: 50%;
+}
+
+/*arrondir l'image de matt */
+.matt img{
+   border-radius: 50%;
+}
+
+/* arrondir l'image de mike */
+.mike img{
+   border-radius: 50%;
+}
+
+/* tous les sous-titres en rouge */
+h4{
+   color:#f0454c;
+}
+
+/* toous les paragraphes en gris*/
+.conteneur p{
+   color:  #9aa0ab;
+
+}
+/* premiere ligne des paragraphes en noir */
+.section-1 p:first-line{
+   color:black;
+}
+
+/* titre de la section 3 en gris */
+.titre-section3 h3{
+   color: #9aa0ab;
+}
+
+/* le titre est aligner */
+.titre-section3 h2{
+   display:inline;
+}
+
+/* essai pour redimensionné le portfolio */
+.portfolio{
+   padding:80px;
+   /*padding-right: 50px;
+   padding-left: 50px;*/
+}
+
+/* pour les more */
+.conteneur a{
+   width:60px;
+   margin-right:180px;
+   text-decoration:none;
+   color:#f0454c;
 }
 
 
@@ -66,10 +173,11 @@ html {
    display:flex;
 }
 
-.peace,.free,.paiement{
+/*.peace,.free,.paiement{
    display:flex;
    justify-content:space-between;
-}
+}*/
+
 .section-2{
    display:flex;
 }
