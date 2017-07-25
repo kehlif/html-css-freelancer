@@ -18,12 +18,62 @@ html {
    box-sizing: inherit;
 }
 
+/* mettre une image en fond et la dimensionnée*/
 .intro{
    background-image:url("../images/header.jpg");
-   height:80vh;
+   background-repeat: no-repeat;
+   height:200vh;
+   margin-bottom: 1px;
 }
 
-button{
-   background-color: #f0454c;
+/* center le titre et placer la barre au dessus */
+.intro h1{
+   border-top:4px solid #f0454c;
+   height:50px;
+   text-align:center;
+   margin-top: 200px;
+   margin-left:20px;
+   margin-right: 250px;
+}
 
+/* barre de navigation en haut à droite et séparée */
+.navigation li {
+   float:right;
+   display:inline;
+   width:100px;
+}
+
+/* dimensionnée les boutons et mise en forme */
+.bouton {
+   background-color: #f0454c;
+   height:100vh;
+   width:150vw;
+   margin-left: 150px;
+   border-radius: 5px;
+   border:1px solid #f0454c;
+   color:white;
+   text-decoration:none;
+}
+
+/* pour center le conteneur qui contient le contenant */
+.conteneur{
+   margin:200px;
+   margin-top:0;
+}
+
+
+.section-1{
+   display:flex;
+}
+
+.peace,.free,.paiement{
+   display:flex;
+   justify-content:space-between;
+}
+.section-2{
+   display:flex;
+}
+.section-3{
+   display:flex;
+   /*justify-content:space-between;*/
 }
