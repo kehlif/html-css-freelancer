@@ -12,64 +12,94 @@
 
 html {
    box-sizing: border-box;
+   font-family:'Open Sans';
 }
 
 *, *:before, *:after {
    box-sizing: inherit;
 }
 
+/*barre rouge au dessus des titres */
+h1:before,h2:before{
+   content:"";
+   display:block;
+   height:4px;
+   width:60px;
+   margin-bottom:20px;
+   background:#f0454c;
+}
 
-
-section h2{
+/*section h2{
    border-top:4px solid #f0454c;
    width:60px;
    padding-top:20px;
-}
+}*/
 
-section p{
 
-}
 
 /* mettre une image en fond et la dimensionnée*/
 .intro{
+
    background-image:url("../images/header.jpg");
    background-repeat: no-repeat;
-   width: 1380px;
+   width: 1290px;
    height: 1100px;
    /*margin-bottom: 1px;*/
    background-size: cover;
+   padding-left:100px;
+   padding-top:20px;
 }
 
 /* center le titre et placer la barre au dessus */
 .intro h1{
-   border-top:4px solid #f0454c;
-   width:60px;
-   height:50px;
+   width:80px;
+   height:20px;
    text-align:center;
-   margin-top: 200px;
+   margin-top: 20px;
    margin-left:20px;
-   margin-right: 250px;
+   margin-right: 200px;
    padding:90px;
+   display:block;
+   font-family:'Montserrat';
 }
 
+
 .intro h3{
+   font-family:'Montserrat';
    height:50px;
    text-align:center;
-   margin-left:20px;
-   margin-right: 250px;
+   margin-left:5px;
+   margin-right: 600px;
+   margin-top: 150px;
+   margin-bottom:50px;
    padding:20px;
+
 }
 
 
 /* barre de navigation en haut à droite et séparée */
-.navigation li,a {
+.navigation li{
    position: relative;
-   left: 450px;
-   right:200px;
+   left: 400px;
+   /*padding-top:2px;*/
    display:inline-block;
+   text-decoration:none;
+   margin:20px;
    /*width:100px;*/
-   text-decoration: none;
 }
+
+.navigation a {
+   text-decoration: none;
+   color:black;
+
+}
+
+/*mettre la barre de navigation et le lien freelancer sur la même ligne */
+.navigation,.bouton{
+   display:inline-block;
+}
+
+
 
 .fa-twitter,.fa-facebook{
    color:#f0454c;
@@ -78,7 +108,8 @@ section p{
 /* dimensionnée les boutons et mise en forme */
 .bouton {
    background-color: #f0454c;
-   margin-left: 150px;
+   margin-top:50px;
+   margin-left: 100px;
    border-radius: 5px;
    border:1px solid #f0454c;
    color:white;
@@ -91,14 +122,13 @@ section p{
 .conteneur{
    margin:220px;
    margin-top:0;
+   margin-bottom: 50px;
+
 }
 
 /* 1er paragraphe a bien centré */
 .peace{
-   padding-top:45px;
-   padding-right:45px;
-   padding-bottom: 45px;
-   padding-left:0;
+   padding:45px 45px 45px 0px;
 }
 
 /* 2eme paragraphe a centré */
@@ -111,12 +141,15 @@ section p{
    padding:45px;
 }
 
-
-
+                                 /**********************************************/
+                                 /* Partie reservée au photo en forme arrondi */
+                                 /********************************************/
 /* arrondir l'image de joey*/
-.joey img{
+.image img{
    border-radius: 50%;
+   padding-top:50px;
 }
+
 
 /*arrondir l'image de matt */
 .matt img{
@@ -145,11 +178,13 @@ h4{
 
 /* titre de la section 3 en gris */
 .titre-section3 h3{
+   font-family:'Montserrat';
    color: #9aa0ab;
 }
 
 /* le titre est aligner */
 .titre-section3 h2{
+   font-family:'Montserrat';
    display:inline;
 }
 
@@ -163,12 +198,53 @@ h4{
 /* pour les more */
 .conteneur a{
    width:60px;
-   margin-right:180px;
+   margin-right:200px;
    text-decoration:none;
    color:#f0454c;
+   display:inline;
+}
+
+/*pour les icônes */
+.bas1,.bas2{
+   margin-left:200px;
+   width:60px;
+   display:inline;
+   margin-top: 0px;
+}
+
+/*pour mettre la couleur en gris clair */
+.bas1 .fa-twitter{
+   color:#b9c0c6;
+}
+
+/* pour mettre la couleur en gris clair */
+.bas2 .fa-facebook{
+   color:#b9c0c6;
+
+}
+
+/* pour mettre la couleur en gris clair */
+.bas2 .fa-google-plus{
+   color:#b9c0c6;
+
 }
 
 
+/* pour le freelancer du bas (les bonnes mesures)*/
+.bas2 p{
+   display:inline;
+   width:60px;
+   margin-left:500px;
+   color:#b9c0c6;
+
+}
+
+
+/*.footer{
+   margin-top:50px;
+   margin-bottom:100px;
+}
+*/
 .section-1{
    display:flex;
 }
@@ -178,10 +254,34 @@ h4{
    justify-content:space-between;
 }*/
 
-.section-2{
+.section-2 {
    display:flex;
+
 }
-.section-3{
+
+.section-3 {
    display:flex;
-   /*justify-content:space-between;*/
+   /*justify-content:center;
+   flex-wrap:wrap;*/
+}
+
+/*.joey p{
+   padding-left:40%;
+   display:block;
+}*/
+
+/* aligner le texte et l'image ensemble */
+.image,.joey{
+   display:inline-block;
+   margin-left: 20px;
+}
+
+.image,.matt{
+   display:inline-block;
+   margin-left: 20px;
+}
+
+.image,.mike{
+   display:inline-block;
+   margin-left: 20px;
 }
