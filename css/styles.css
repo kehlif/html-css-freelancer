@@ -29,13 +29,9 @@ h1:before,h2:before{
    background:#f0454c;
 }
 
-/*section h2{
-   border-top:4px solid #f0454c;
-   width:60px;
-   padding-top:20px;
-}*/
-
-
+                        /**********************************************************/
+                        /*           section dediée à la partie header            */
+                        /**********************************************************/
 
 /* mettre une image en fond et la dimensionnée*/
 .intro{
@@ -50,7 +46,7 @@ h1:before,h2:before{
    padding-top:20px;
 }
 
-/* center le titre et placer la barre au dessus */
+/* center le titre et le redimensionné */
 .intro h1{
    width:80px;
    height:20px;
@@ -63,7 +59,7 @@ h1:before,h2:before{
    font-family:'Montserrat';
 }
 
-
+/*redimension du sous-titre */
 .intro h3{
    font-family:'Montserrat';
    height:50px;
@@ -77,6 +73,10 @@ h1:before,h2:before{
 }
 
 
+                     /************************************************************/
+                     /*                      NAVIGATION                          */
+                     /************************************************************/
+
 /* barre de navigation en haut à droite et séparée */
 .navigation li{
    position: relative;
@@ -88,22 +88,25 @@ h1:before,h2:before{
    /*width:100px;*/
 }
 
+/* section qui peemet d'enlever le soulignement de la barre de navigation + changement de couleur*/
 .navigation a {
    text-decoration: none;
    color:black;
-
 }
+
 
 /*mettre la barre de navigation et le lien freelancer sur la même ligne */
 .navigation,.bouton{
    display:inline-block;
 }
 
-
-
+/*changement de couleur pour les icônes*/
 .fa-twitter,.fa-facebook{
    color:#f0454c;
 }
+                        /************************************************************/
+
+
 
 /* dimensionnée les boutons et mise en forme */
 .bouton {
@@ -116,15 +119,20 @@ h1:before,h2:before{
    text-decoration:none;
    padding:20px;
    text-align:center;
+   font-weight:bold;
 }
 
-/* pour center le conteneur qui contient le contenant */
+/* pour center le conteneur qui contient le contenant (cad les trois secrions)*/
 .conteneur{
    margin:220px;
    margin-top:0;
    margin-bottom: 50px;
 
 }
+
+                        /*******************************************************/
+                        /* centrage des paragraphes de la section 1            */
+                        /*******************************************************/
 
 /* 1er paragraphe a bien centré */
 .peace{
@@ -152,14 +160,17 @@ h1:before,h2:before{
 
 
 /*arrondir l'image de matt */
-.matt img{
+/*.matt img{
    border-radius: 50%;
 }
 
 /* arrondir l'image de mike */
-.mike img{
+/*.mike img{
    border-radius: 50%;
 }
+
+                                 /***********************************************/
+
 
 /* tous les sous-titres en rouge */
 h4{
@@ -249,11 +260,6 @@ h4{
    display:flex;
 }
 
-/*.peace,.free,.paiement{
-   display:flex;
-   justify-content:space-between;
-}*/
-
 .section-2 {
    display:flex;
 
@@ -261,23 +267,21 @@ h4{
 
 .section-3 {
    display:flex;
-   /*justify-content:center;
-   flex-wrap:wrap;*/
 }
 
-/*.joey p{
-   padding-left:40%;
-   display:block;
-}*/
+
 
 /* aligner le texte et l'image ensemble */
 .image,.joey{
    display:inline-block;
    margin-left: 20px;
+/*   width:180px;
+   margin-top:20px;
+   margin-bottom:20px;*/
 }
 
 .image,.matt{
-   display:inline-block;
+   display:block;
    margin-left: 20px;
 }
 
