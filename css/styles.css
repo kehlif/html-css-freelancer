@@ -35,28 +35,30 @@ h1:before,h2:before{
 
 /* mettre une image en fond et la dimensionnée*/
 .intro{
-
    background-image:url("../images/header.jpg");
    background-repeat: no-repeat;
    width: 1290px;
    height: 1100px;
-   /*margin-bottom: 1px;*/
    background-size: cover;
-   padding-left:100px;
-   padding-top:20px;
+   margin-top:0px;
 }
 
 /* center le titre et le redimensionné */
 .intro h1{
-   width:80px;
-   height:20px;
-   text-align:center;
-   margin-top: 20px;
-   margin-left:20px;
+   width:600px;
+   height:50px;
+   text-align:left;
+   margin-top: 200px;
+   margin-left:150px;
    margin-right: 200px;
    padding:90px;
-   display:block;
    font-family:'Montserrat';
+   line-height:50px;
+}
+
+/* permet de separer le titre de facon adéquate */
+span{
+   display:block;
 }
 
 /*redimension du sous-titre */
@@ -64,12 +66,12 @@ h1:before,h2:before{
    font-family:'Montserrat';
    height:50px;
    text-align:center;
-   margin-left:5px;
+   margin-left:210px;
    margin-right: 600px;
-   margin-top: 150px;
+   margin-top: 80px;
    margin-bottom:50px;
    padding:20px;
-
+   padding-bottom: 0px;
 }
 
 
@@ -77,18 +79,21 @@ h1:before,h2:before{
                      /*                      NAVIGATION                          */
                      /************************************************************/
 
+nav{
+   margin-top:-10px;
+}
 /* barre de navigation en haut à droite et séparée */
+
 .navigation li{
    position: relative;
-   left: 400px;
-   /*padding-top:2px;*/
-   display:inline-block;
+   left: 600px;
+   display:inline;
    text-decoration:none;
    margin:20px;
-   /*width:100px;*/
+   margin-top:0px;
 }
 
-/* section qui peemet d'enlever le soulignement de la barre de navigation + changement de couleur*/
+/* section qui permet d'enlever le soulignement de la barre de navigation + changement de couleur*/
 .navigation a {
    text-decoration: none;
    color:black;
@@ -97,10 +102,11 @@ h1:before,h2:before{
 
 /*mettre la barre de navigation et le lien freelancer sur la même ligne */
 .navigation,.bouton{
-   display:inline-block;
+   display:inline;
+
 }
 
-/*changement de couleur pour les icônes*/
+/*changement de couleur pour les icônes de la barre de naviagtion*/
 .fa-twitter,.fa-facebook{
    color:#f0454c;
 }
@@ -112,7 +118,7 @@ h1:before,h2:before{
 .bouton {
    background-color: #f0454c;
    margin-top:50px;
-   margin-left: 100px;
+   margin-left: 250px;
    border-radius: 5px;
    border:1px solid #f0454c;
    color:white;
@@ -122,11 +128,13 @@ h1:before,h2:before{
    font-weight:bold;
 }
 
+
 /* pour center le conteneur qui contient le contenant (cad les trois secrions)*/
 .conteneur{
    margin:220px;
    margin-top:0;
    margin-bottom: 50px;
+
 
 }
 
@@ -153,23 +161,13 @@ h1:before,h2:before{
                                  /* Partie reservée au photo en forme arrondi */
                                  /********************************************/
 /* arrondir l'image de joey*/
-.image img{
-   border-radius: 50%;
-   padding-top:50px;
-}
-
-
-/*arrondir l'image de matt */
-/*.matt img{
+ .section-3 img{
+    padding-top:20px;
    border-radius: 50%;
 }
 
-/* arrondir l'image de mike */
-/*.mike img{
-   border-radius: 50%;
-}
 
-                                 /***********************************************/
+                           /***********************************************/
 
 
 /* tous les sous-titres en rouge */
@@ -202,8 +200,6 @@ h4{
 /* essai pour redimensionné le portfolio */
 .portfolio{
    padding:80px;
-   /*padding-right: 50px;
-   padding-left: 50px;*/
 }
 
 /* pour les more */
@@ -216,76 +212,84 @@ h4{
 }
 
 /*pour les icônes */
-.bas1,.bas2{
+/*.bas1,.bas2{
    margin-left:200px;
    width:60px;
    display:inline;
    margin-top: 0px;
+   /*position:fixed;*/
 }
 
 /*pour mettre la couleur en gris clair */
-.bas1 .fa-twitter{
+/*.bas1 .fa-twitter{
    color:#b9c0c6;
 }
 
-/* pour mettre la couleur en gris clair */
-.bas2 .fa-facebook{
-   color:#b9c0c6;
-
-}
-
-/* pour mettre la couleur en gris clair */
-.bas2 .fa-google-plus{
-   color:#b9c0c6;
-
-}
-
-
-/* pour le freelancer du bas (les bonnes mesures)*/
-.bas2 p{
-   display:inline;
-   width:60px;
-   margin-left:500px;
-   color:#b9c0c6;
-
-}
-
-
-/*.footer{
-   margin-top:50px;
-   margin-bottom:100px;
-}
 */
+
+
+
+
+
+footer:before{
+   content:"";
+   background:lightgrey;
+   height:2px;
+   display:block;
+   width:940px;
+   margin-left: 190px;
+   margin-bottom:50px;
+}
+
+footer{
+   margin-bottom:20px;
+   display:flex;
+   justify-content: space-between;
+   border-top: 1px solid lightgrey;
+   width:940px;
+   margin-left:200px;
+}
+
+footer .fa,p {
+   color:lightgrey;
+   margin:10px;
+
+}
+
+/********************************************************/
+/* application des flex pour structurer les sections    */
+/********************************************************/
 .section-1{
    display:flex;
+   width:950px;
+}
+
+.section-1 p{
+   margin-left:0px;
 }
 
 .section-2 {
    display:flex;
-
 }
+
+.section-2 p{
+      margin-left: 0px;
+}
+
 
 .section-3 {
    display:flex;
+   width: 950px;
 }
 
-
-
-/* aligner le texte et l'image ensemble */
-.image,.joey{
-   display:inline-block;
-   margin-left: 20px;
-/*   width:180px;
-   margin-top:20px;
-   margin-bottom:20px;*/
+.section-3 p{
+   font-size:12px;
 }
 
-.image,.matt{
-   display:block;
-   margin-left: 20px;
+.mike a{
+   margin-left:150px;
 }
 
-.image,.mike{
-   display:inline-block;
-   margin-left: 20px;
+ i:hover{
+   color:black;
 }
